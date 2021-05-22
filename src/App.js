@@ -8,7 +8,7 @@ import Games from './components/Games/Games'
 function App() {
   return (
     <>
-    <div className="App">
+    
         <Router>
           <Navbar />
           <Switch>
@@ -20,7 +20,7 @@ function App() {
             
           </Switch>
       </Router>
-      </div>
+      
     </>
   );
 }
