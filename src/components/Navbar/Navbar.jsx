@@ -1,16 +1,15 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
- //import M from "materialize-css/dist/js/materialize.min.js";
+import M from "materialize-css/dist/js/materialize.min.js";
 
 import './Navbar.css'
 
 
 const Navbar = () => {
-//   let elems = document.querySelectorAll('.sidenav');
-//   M.Sidenav.init(elems, {
-//     edge: "left",
-//     inDuration: 250
-// });
+  let elems = document.querySelectorAll('.sidenav');
+  M.Sidenav.init(elems, {});
+  // edge: "left",
+  // inDuration: 250
   return (
     <>
 <nav className="green">
