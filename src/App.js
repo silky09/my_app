@@ -1,8 +1,8 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { HashRouter as Router, Switch, Route } from 'react-router-dom'
 import Navbar from './components/Navbar/Navbar'
 import Home from './components/Home/Home'
-import Quotes from './components/Quotes/Quotes'
+import Advice from './components/Advice/Advice'
 import Music from './components/Music/Music'
 import Games from './components/Games/Games'
 function App() {
@@ -13,7 +13,7 @@ function App() {
           <Navbar />
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route exact path='/quotes' component={Quotes}/>
+            <Route exact path='/advice' component={Advice}/>
             <Route exact path='/music' component={Music}/>
             <Route exact path='/games' component={Games} />
             {/* <Redirect to="/" /> */}
