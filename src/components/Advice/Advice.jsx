@@ -8,7 +8,11 @@ const Advice = () => {
   //const url = 'https://api.adviceslip.com/advice';
 
   useEffect(() => {
-    getAdvice()
+    fetch("http://api.quotable.io/random")
+    .then(res => res.json())
+    .then(data => {
+    setAdvice(data.content)
+  })
   }, [])
   
 
